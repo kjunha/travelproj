@@ -12,6 +12,9 @@ body{
 #login-pane{
   background-image: linear-gradient(to bottom right, #A8EDEA, #FED6E3);
 }
+#logincred{
+  margin: 2em 5em;
+}
 #lgbtn{
   text-align: center;
 }

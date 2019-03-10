@@ -27,11 +27,11 @@ class Langing extends React.Component {
               <h1>Adventure<br/>The Real World!</h1>
             </div>
             <form className="ui form" style={{marginTop:'1.5em', marginBottom:'1.5em'}}>
-              <div className="field">
+              <div id="logincred" className="field">
                 <label>ID</label>
-                <input type="text" name="ide" placeholder="ID"/>
+                <input type="text" name="ide" placeholder="email@example.com"/>
               </div>
-              <div className="field">
+              <div id="logincred" className="field">
                 <label>Password</label>
                 <input type="text" name="pass" placeholder="Password"/>
               </div>
