@@ -1,0 +1,17 @@
+body{
+  background-image: url("../img/landingback.jpg");
+  background-size: cover;
+}
+
+#main{
+  height:80%;
+}
+#login{
+  padding:5em;
+}
+#bbtn{
+  background-color: #55C9C4;
+}
+#rbtn{
+  background-color: #FF98BA;
+}

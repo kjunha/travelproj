@@ -1,0 +1,21 @@
+#menubar{
+  text-align: center;
+  color: #FFFFFF;
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+#menu_comp{
+  text-align: right;
+}
+#menu_comp a{
+  margin-left: 1em;
+  padding-right: 1em;
+  border-right: 0.5px solid #C7C7C7;
+  color: #FFFFFF;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+#menu_comp a:hover{
+  text-decoration: underline;
+  color: #707070;
+}
