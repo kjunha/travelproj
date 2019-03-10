@@ -9,6 +9,12 @@ body{
 #login{
   padding:5em;
 }
+#login-pane{
+  background-image: linear-gradient(to bottom right, #A8EDEA, #FED6E3);
+}
+#lgbtn{
+  text-align: center;
+}
 #bbtn{
   background-color: #55C9C4;
 }

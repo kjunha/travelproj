@@ -4,46 +4,112 @@
     <meta charset="utf-8">
     <title>travel proj</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-    <link rel="stylesheet" href="/style.css">
   </head>
+  <style media="screen">
+  body{
+    background-image: url("landingback.jpg");
+    background-size: cover;
+  }
+  #modovf{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  #signin-mod{
+    background-image: linear-gradient(to bottom right, #A8EDEA, #FED6E3);
+    margin: 7% 20%;
+    padding: 2em 3em;
+  }
+  #bbtn{
+    background-color: #55C9C4;
+  }
+  #rbtn{
+    background-color: #FF98BA;
+  }
+  #closebtn:hover{
+    color:#C7C7C7;
+    cursor: pointer;
+  }
+  </style>
   <body>
-    <!--Menu Bar Section-->
-    <div id="menubar" class="ui inverted divided grid">
-      <div class="four wide column">
-        Logo and Business Name
-      </div>
-      <div id="menu_comp" class="twelve wide column">
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Start Guide</a>
-        <a href="#">Help Desk</a>
-      </div>
-    </div>
-
     <!--Login Section-->
-    <div id="main"class="ui grid">
-      <div id="login" class="eight wide column">
-        <div class="ui placeholder segment">
-          <div class="message" style="text-align:center;">
-            <h1>Adventure<br>The Real World!</h1>
-          </div>
-          <form class="ui form" style="margin-top: 1.5em; margin-bottom: 1.5em;">
-            <div class="field">
-              <label>ID</label>
-              <input type="text" name="ide" placeholder="ID">
+    <div id="modovf" style="display:block">
+      <div id="signin-mod"class="ui segment">
+        <form class="ui form">
+          <div class="ui grid">
+            <div class="fourteen wide column">
+              <h4 class="ui dividing header">[Logo] Welcome to the companyname!</h4>
             </div>
-            <div class="field">
-              <label>Password</label>
-              <input type="text" name="pass" placeholder="Password">
+            <div class="two wide column" style="text-align:right">
+              <i id="closebtn" class="window close outline icon"></i>
             </div>
-            <button id="bbtn" class="ui button" type="submit">Login</button>
-          </form>
-          <div class="ui horizontal divider">Or</div>
-          <div class="signup" style="text-align:center; margin-top:1.5em;">
-            <p>Welcome to the world traveler's community!</p>
-            <button id="rbtn" class="ui button">Sign up</button>
           </div>
-        </div>
+
+          <div class="field">
+            <label>Name</label>
+            <div class="two fields">
+              <div class="field">
+                <input type="text" name="shipping[first-name]" placeholder="First Name">
+              </div>
+              <div class="field">
+                <input type="text" name="shipping[last-name]" placeholder="Last Name">
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Email Address (User ID)</label>
+            <div class="fields">
+              <div class="fourteen wide field">
+                <input type="text" name="email" placeholder="example@example.com">
+              </div>
+              <div class="two wide field">
+                <button id="bbtn" class="ui button" name="button"> Verify</button>
+              </div>
+            </div>
+          </div>
+
+            <div class="two fields">
+              <div class="field">
+                <label>Password</label>
+                <input type="text" name="password" placeholder="Your Password">
+              </div>
+              <div class="field">
+                <label>Confirm Password</label>
+                <input type="text" name="password_c" placeholder="Confirmation">
+              </div>
+            </div>
+
+            <div class="two fields">
+              <div class="field">
+                <label>Country</label>
+                <input type="text" name="country" placeholder="Country">
+              </div>
+              <div class="field">
+                <label>City/Region</label>
+                <input type="text" name="region" placeholder="Region">
+              </div>
+            </div>
+            <div class="field" style="text-align:right;">
+              <div class="ui checkbox">
+                <input id="tccheck" type="checkbox" value="agree">
+                <label>I agree to the <a href="#">Privacy Policy, Terms & Conditions</a></label>
+              </div>
+            </div>
+            <div class="ui grid">
+              <div class="eight wide column" style="text-align:left;">
+                <button id="rbtn" class="ui button">Sign in as a Tour guide</button>
+              </div>
+              <div class="eight wide column" style="text-align:right;">
+                <button id="bbtn" class="ui button">Sign in as a Traveler</button>
+              </div>
+            </div>
+        </form>
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>

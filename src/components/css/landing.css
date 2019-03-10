@@ -9,9 +9,35 @@ body{
 #login{
   padding:5em;
 }
+#login-pane{
+  background-image: linear-gradient(to bottom right, #A8EDEA, #FED6E3);
+}
+#lgbtn{
+  text-align: center;
+}
+#modovf{
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+#signin-mod{
+  background-image: linear-gradient(to bottom right, #A8EDEA, #FED6E3);
+  margin: 7% 20%;
+  padding: 2em 3em;
+}
 #bbtn{
   background-color: #55C9C4;
 }
 #rbtn{
   background-color: #FF98BA;
+}
+
+#closebtn:hover{
+  color:#707070;
+  cursor: pointer;
 }

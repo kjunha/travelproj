@@ -9,7 +9,7 @@ class Menubar extends React.Component {
         <div className="four wide column">
           Logo and Business Name
         </div>
-        <div id="menu_comp" class="twelve wide column">
+        <div id="menu_comp" className="twelve wide column">
           <a href="#">Home</a>
           <a href="#">About Us</a>
           <a href="#">Start Guide</a>
