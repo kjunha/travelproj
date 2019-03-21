@@ -1,8 +1,9 @@
 #menubar{
+  position: relative;
+  width: 100%;
   text-align: center;
   color: #FFFFFF;
   padding: 0.5em;
-  margin-top: 0.5em;
 }
 #menu_comp{
   text-align: right;

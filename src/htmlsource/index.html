@@ -6,112 +6,126 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
   </head>
   <style media="screen">
-  body{
-    background-image: url("landingback.jpg");
-    background-size: cover;
-  }
-  #modovf{
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  #signin-mod{
-    background-image: linear-gradient(to bottom right, #A8EDEA, #FED6E3);
-    margin: 7% 20%;
-    padding: 2em 3em;
-  }
-  #bbtn{
-    background-color: #55C9C4;
-  }
-  #rbtn{
-    background-color: #FF98BA;
-  }
-  #closebtn:hover{
-    color:#C7C7C7;
-    cursor: pointer;
-  }
+    #menubar{
+      position: relative;
+      width: 100%;
+      text-align: center;
+      color: #FFFFFF;
+      padding: 0.5em;
+    }
+    #menu_comp{
+      text-align: right;
+    }
+    #menu_comp a{
+      margin-left: 1em;
+      padding-right: 1em;
+      border-right: 0.5px solid #C7C7C7;
+      color: #FFFFFF;
+      padding-top: 0.3em;
+      padding-bottom: 0.3em;
+    }
+    #menu_comp a:hover{
+      text-decoration: underline;
+      color: #707070;
+    }
+    #search_opt {
+      height: 100%;
+      background-image: url("./searchingcat.jpeg");
+      background-size: cover;
+    }
+    #welcome_title{
+      text-align: center;
+      color: #ffffff;
+      padding-top: 3em;
+      margin-bottom: 0.7%;
+    }
+    #button_set {
+      text-align: center;
+      width:75%;
+      margin:auto;
+      padding: 2em 3em;
+    }
+    #button_set button {
+      font-size: 20pt;
+      background-color: #a8edea;
+      color: #ffffff;
+      padding: 0.7em 1em;
+      opacity: 0.75;
+    }
+    #button_set button:hover{
+      opacity: 1;
+    }
+    #sm_btn{
+      text-align: right;
+      width: 70%;
+      margin: auto;
+      padding-top: 0.7%;
+    }
+    #sm_btn button {
+      font-size: 18pt;
+      background-color: #a8edea;
+      color: #ffffff;
+      padding: 0.7em 1em;
+      opacity: 0.75;
+    }
+    #sm_btn button:hover{
+      background-color: #000000;
+    }
+
   </style>
   <body>
-    <!--Login Section-->
-    <div id="modovf" style="display:block">
-      <div id="signin-mod"class="ui segment">
-        <form class="ui form">
-          <div class="ui grid">
-            <div class="fourteen wide column">
-              <h4 class="ui dividing header">[Logo] Welcome to the companyname!</h4>
-            </div>
-            <div class="two wide column" style="text-align:right">
-              <i id="closebtn" class="window close outline icon"></i>
-            </div>
-          </div>
-
-          <div class="field">
-            <label>Name</label>
-            <div class="two fields">
-              <div class="field">
-                <input type="text" name="shipping[first-name]" placeholder="First Name">
-              </div>
-              <div class="field">
-                <input type="text" name="shipping[last-name]" placeholder="Last Name">
-              </div>
-            </div>
-          </div>
-
-          <div class="field">
-            <label>Email Address (User ID)</label>
-            <div class="fields">
-              <div class="fourteen wide field">
-                <input type="text" name="email" placeholder="example@example.com">
-              </div>
-              <div class="two wide field">
-                <button id="bbtn" class="ui button" name="button"> Verify</button>
-              </div>
-            </div>
-          </div>
-
-            <div class="two fields">
-              <div class="field">
-                <label>Password</label>
-                <input type="text" name="password" placeholder="Your Password">
-              </div>
-              <div class="field">
-                <label>Confirm Password</label>
-                <input type="text" name="password_c" placeholder="Confirmation">
-              </div>
-            </div>
-
-            <div class="two fields">
-              <div class="field">
-                <label>Country</label>
-                <input type="text" name="country" placeholder="Country">
-              </div>
-              <div class="field">
-                <label>City/Region</label>
-                <input type="text" name="region" placeholder="Region">
-              </div>
-            </div>
-            <div class="field" style="text-align:right;">
-              <div class="ui checkbox">
-                <input id="tccheck" type="checkbox" value="agree">
-                <label>I agree to the <a href="#">Privacy Policy, Terms & Conditions</a></label>
-              </div>
-            </div>
-            <div class="ui grid">
-              <div class="eight wide column" style="text-align:left;">
-                <button id="rbtn" class="ui button">Sign in as a Tour guide</button>
-              </div>
-              <div class="eight wide column" style="text-align:right;">
-                <button id="bbtn" class="ui button">Sign in as a Traveler</button>
-              </div>
-            </div>
-        </form>
+    <!--Header && Search Opt-->
+    <div id="search_opt" class="search_opt">
+      <!--Menu bar-->
+      <div id="menubar" class="ui inverted divided grid">
+        <div class="four wide column">
+          Logo and Business Name
+        </div>
+        <div id="menu_comp" class="twelve wide column">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Start Guide</a>
+          <a href="#">Help Desk</a>
+        </div>
       </div>
+      <!--/Menu bar-->
+
+      <div id="welcome_title" class="welcome_title">
+        <h1 style="font-size:50pt;">Aloha, Welcome to Hawaii</h1>
+        <h2 style="font-size:35pt;">Choose Your Activity</h2>
+      </div>
+
+      <div id="button_set" class="button_set">
+        <div class="ui three column grid">
+          <div class="row" style="margin-bottom: 1%;">
+            <div class="column">
+              <button class="ui button" type="button">this btn</button>
+            </div>
+            <div class="column">
+              <button class="ui button" type="button">this btn</button>
+            </div>
+            <div class="column">
+              <button class="ui button" type="button">this btn</button>
+            </div>
+          </div>
+          <div class="column">
+            <button class="ui button" type="button">this btn</button>
+          </div>
+          <div class="column">
+            <button class="ui button" type="button">this btn</button>
+          </div>
+          <div class="column">
+            <button class="ui button" type="button">this btn</button>
+          </div>
+        </div>
+      </div>
+      <div id="sm_btn" class="sm_btn">
+        <button class="ui button" type="button">this btn</button>
+      </div>
+
     </div>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
   </body>
 </html>
